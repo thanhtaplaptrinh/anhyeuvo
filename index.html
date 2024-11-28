@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Anniversary</title>
+    <style>
+      /* Đặt nền gradient */
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      h1 {
+        font-size: 3.5em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-top: 50px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 1.3em;
+        margin: 20px;
+        line-height: 1.8;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        background: #ff7e5f;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #ff6a5a;
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(255, 106, 90, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Anniversary! 💖</h1>
+    <p>
+      Cảm ơn em vì 3 tháng qua đã ở bên anh, lúc vui hay lúc buồn đi chăng nữa.
+      Em chính là nguồn động lực của anh cố gắng mỗi ngày đó. Dù cho ở tháng 3
+      này hai đứa vẫn có lúc phải buồn, thậm chí là xém nữa chia tay 2 lần và 1
+      xíu nữa thôi là xa nhau thật đó...nhưng sau cùng em vẫn ở đây bên anh và
+      không thể phủ nhận rằng....anh rất nhớ em, anh không thể chịu được việc
+      phải xa em......đối với anh nó khó lắm, như anh mất đi 1 nửa đời mình vậy.
+      so, its tháng 11 alreadyyy, chuẩn bị qua tháng 12, hai đứa sắp được gặp
+      nhau rồi đó. Bbi thấy hong thời gian trôi nhanh như 1 cơn gió, mấy chốc
+      hai đứa bé mới chập chững trao nhau món quà đầu tiên vậy mà sắp được gặp
+      nhau, tay nắm tay rùi đó. Cooking date, Vi vu Hà Nội, đi shop handmade, đi
+      ăn xiên bửn... tất cả những điều tưởng chừng đơn giản nhưng anh đang hằng
+      mong để được cùng em hai đứa hoàn thiện những ước điều ấy cùng nhau đó!!!
+      88 Days bên nhau, là 88 ngày anh vui nhất trong cuộc đời mình.Anh cảm ơn
+      em vì tất cả những sự hy sinh em đã trao cho anh và cho cuộc tình của hai
+      đứa mình, cảm ơn em vì đã đến bên anh và trao cho anh những điều anh chưa
+      bao giờ được nhận. Anh cảm ơn em nhiều nhiềuuuu. Sau cùng anh muốn nói là
+      ANH YÊU EM NHIỀU LẮM, MÃI LÀ BUS BUS CỦA ĐỜI ANH EM NHÉ!!!♥ “ Yêu xa không
+      hề khó Chỉ là ta có chịu khó vì nhau hay không thuii” Cảm ơn em vì tất cả!
+      Anh yêu em rất nhiều! 💖
+    </p>
+    <p style="color: white">dear Chồng EM</p>
+    <p style="color: red">♥♥♥</p>
+
+    <p></p>
+    <button class="btn" onclick="showMessage()">
+      Click để nhận điều bất ngờ!
+    </button>
+
+    <!-- Nhạc nền -->
+    <audio id="bg-music">
+      <source src="nhac.mp3" type="audio/mpeg" />
+      Trình duyệt của bạn không hỗ trợ âm thanh.
+    </audio>
+
+    <script>
+      // Lấy thẻ audio
+      const bgMusic = document.getElementById("bg-music");
+
+      // Hàm hiện thông điệp và phát nhạc
+      function showMessage() {
+        alert("Mãi yêu em! 💕 Cảm ơn em vì tất cả!");
+        bgMusic.play().catch((error) => {
+          console.log("Không thể phát nhạc:", error);
+        });
+      }
+    </script>
+  </body>
+</html>
